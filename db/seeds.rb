@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Job.create([{ title: 'hello'}, {description: 'Yes. yes. yes'}, {employer_name: 'Jane Doe'}])
+Applicant.create([{applicant_name: 'Jane Smith'}])
+Employer.create([{employer_name: 'Nike'}])
+OneApplication.create([{applicant_name: "Jane Smith"}])
