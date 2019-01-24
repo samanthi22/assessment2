@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get 'employer/login' => "home#employer"
   resources :employer
   get 'job/create' => "job#new"
+  post 'jobs' => "job#create"
 end

@@ -1,8 +1,15 @@
 <p>Create a job opening</p>
 
-// form goes here <br>
-// input text, employer_name <br>
-// input text, title <br>
-// input text, description <br>
-// submit button <br>
-// then save as Job Object to database <br>
+
+<%= form_for(Job.new) do |f| %>
+  <%= f.label :employer_name %>:
+  <%= f.text_field :employer_name %><br />
+  
+  <%= f.label :title %>:
+  <%= f.text_field :title %><br />
+
+  <%= f.label :description %>:
+  <%= f.text_field :description %><br />
+
+  <%= f.submit %>
+<% end %>
